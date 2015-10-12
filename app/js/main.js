@@ -6,18 +6,19 @@
 
   var templateFunction = _.template(templateString);
 
-  var firstTwentyFive = _.first(etsy.results, 25);
+  var etsyURL = 'https://api.etsy.com/v2/listings/active.js?api_key=h9oq2yf3twf4ziejn10b717i&keywords=baseball&includes=Images,Shop';
 
-  _.each(firstTwentyFive, function (item) {
-    // console.log(item);
-    var itemHTML = templateFunction(item);
-    $('.itemBoxes').append(itemHTML);
-  });
-
-  $('#hambutton').on('click', '#hambutton', function (event) {
-    var btn = $(event.target);
-    var popup = $(btn.sibling('#popup'));
-    popup.removeClass('hidden');
-    popup.addClass('reveallist');
+  $.ajax({
+    url: etsyURL,
+    dataType: 'jsonp',
+    method: 'get' }).then(function (response) {
+    console.log(response);
+    var abc = response.results;
+    console.log(abc);
+    _.each(abc, function (item) {
+      console.log(item);
+      var itemHTML = templateFunction(item);
+      $('.itemBoxes').append(itemHTML);
+    });
   });
 })();

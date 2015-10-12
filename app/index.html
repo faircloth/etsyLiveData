@@ -3,7 +3,7 @@
 <head>
   <title>Etsy Baseball</title>
   <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+  <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -181,19 +181,13 @@
                  <div class="itemBox">
                   <div class="imagecard">
                   <a href= <%= url %> >
-                  <img class="itemImages" src="<%= Images[0].url_170x135 %>">
-                    <button type="button" id="hambutton"> <img class="hamburger" src="http://i.imgur.com/vzMlwuz.png"> <div class="triangle"> </div> </button>
-                    <img class="heart" src="http://i.imgur.com/rnX9fvX.png">
-                    <div class="hidden" id="popup">
-                      <p class="yourlist">Your lists</p>
-                      <input type="text" placeholder="New list">
-                      </input>
-                    </a>
+                    <img class="itemImages" src="<%= Images[0].url_170x135 %>">
+                  </a>
                   </div>                
-                  <p class="text">
-                    <a href= <%= url %> >
-                    <%= title %>
-                  </p>
+                    <p class="text">
+                      <a href= <%= url %> >
+                      <%= title %>
+                    </p>
                   <p class="shopName">
                     <a href= <%= Shop.url %>
                     <span><%= Shop.shop_name %></span>
@@ -255,11 +249,7 @@
 
   
   <!-- scripts -->
-
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/underscore/underscore.js"></script>
-
-  <script src="js/etsy.js"></script>
+ <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 
 
