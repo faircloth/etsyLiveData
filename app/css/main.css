@@ -1,0 +1,389 @@
+* {
+  font-size: 12px;
+  font-family: 'Noto Sans', sans-serif;
+  color: #555563; }
+
+h2 {
+  font-size: 1.1em;
+  font-weight: bold; }
+
+.topbar {
+  width: 950px;
+  margin: 0 auto; }
+
+.Etsy {
+  color: #EC6333;
+  font-size: 40px; }
+
+.searchBarWrapper {
+  display: inline-block;
+  margin-left: 20px;
+  border: 1px solid #4AA8C4;
+  border-radius: 3px; }
+  .searchBarWrapper .searchInput {
+    border: none;
+    padding-left: 5px;
+    padding-right: 35px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em; }
+  .searchBarWrapper .searchButton {
+    padding: 10px 10px;
+    background-color: #4AA8C4;
+    border: 1px solid #4AA8C4;
+    border-radius: 2px;
+    color: white; }
+
+.topBarNav {
+  display: inline-block; }
+  .topBarNav .sellOn {
+    color: #4AA8C4;
+    font-size: 1.2em;
+    margin-left: 100px;
+    padding-bottom: 30px; }
+  .topBarNav .topRightIcons {
+    display: inline-block;
+    width: 380px;
+    margin: 5px 10px;
+    padding-left: 0px; }
+  .topBarNav div .iconblocks {
+    display: block;
+    border-right: 1px solid #E1E3DF;
+    width: 23%;
+    height: 50px;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    vertical-align: center;
+    text-align: center;
+    line-height: 5px;
+    font-size: 1.2em;
+    opacity: .6; }
+    .topBarNav div .iconblocks :hover {
+      opacity: 1; }
+  .topBarNav img {
+    display: block;
+    width: 25px;
+    height: 30px;
+    vertical-align: top;
+    margin: 0 auto;
+    opacity: .6; }
+    .topBarNav img :hover {
+      opacity: 1; }
+
+hr {
+  border-top: .03px solid #E1E3DF;
+  width: 100%;
+  margin-top: 15px; }
+
+.navBar {
+  margin: 10px 0px 0px 0px; }
+  .navBar ul {
+    margin-left: 0;
+    text-align: center;
+    padding: 1px 0px; }
+  .navBar li {
+    display: inline-block;
+    padding: 0px 23px 5px 0px;
+    font-size: 1.1em; }
+
+.graycontainer {
+  background-color: #F5F5F1;
+  border-top: 2px solid #F5F5F1; }
+
+.bodycontainer {
+  width: 950px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #F5F5F1; }
+  .bodycontainer .sidebar {
+    display: inline-block;
+    width: 220px;
+    vertical-align: top;
+    margin-left: 5px; }
+    .bodycontainer .sidebar .sideList {
+      border-radius: 3px;
+      background-color: white;
+      border: 1px solid #CBCCC9;
+      padding: 10px;
+      line-height: 1.9em; }
+      .bodycontainer .sidebar .sideList span {
+        padding-left: 0px;
+        font-weight: bold;
+        font-size: 1.1em;
+        padding-bottom: 2px; }
+      .bodycontainer .sidebar .sideList ul {
+        list-style-type: none;
+        padding-left: 10px;
+        font-size: 1em; }
+        .bodycontainer .sidebar .sideList ul .mainList {
+          color: #4AA8C4; }
+      .bodycontainer .sidebar .sideList .radiobutton {
+        radius: 3px;
+        margin-left: 5px;
+        margin-top: 10px; }
+        .bodycontainer .sidebar .sideList .radiobutton .radiobutton :hover {
+          background-color: black; }
+      .bodycontainer .sidebar .sideList a {
+        color: #4AA8C4;
+        text-decoration: none;
+        padding-left: 8px; }
+    .bodycontainer .sidebar .itemtype input {
+      background-color: #4AA8C4;
+      padding: 15px;
+      font-weight: 500; }
+    .bodycontainer .sidebar #chooseloc {
+      padding-left: 0px; }
+    .bodycontainer .sidebar select {
+      display: block;
+      width: 180px;
+      height: 40px;
+      border: 1px solid #4AA8C4;
+      margin-top: 5px;
+      padding: 20px 5px;
+      font-size: 1.2em; }
+  .bodycontainer .mainpanel h2 {
+    color: #4AA8C4;
+    padding-left: 5px; }
+    .bodycontainer .mainpanel h2 span {
+      font-size: 1.05em; }
+  .bodycontainer .mainpanel {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px; }
+  .bodycontainer .itemBoxes {
+    display: inline-block;
+    padding: 0px;
+    width: 710px; }
+  .bodycontainer .itemBoxes .itemBox {
+    display: inline-block;
+    margin-top: 0px;
+    margin: 0px 5px 15px 4px;
+    width: 31%;
+    vertical-align: top;
+    border-radius: 3px;
+    background-color: white;
+    border: 1px solid #CBCCC9; }
+    .bodycontainer .itemBoxes .itemBox .imagecard {
+      position: relative; }
+    .bodycontainer .itemBoxes .itemBox .itemImages {
+      border-radius: 2px;
+      width: 100%;
+      padding: 0px;
+      overflow: hidden;
+      z-index: 0;
+      border-bottom: 1px solid #E1E3DF;
+      box-sizing: border-box; }
+    .bodycontainer .itemBoxes .itemBox a button .hamburger {
+      opacity: 0;
+      float: left;
+      width: 15px;
+      vertical-align: center; }
+    .bodycontainer .itemBoxes .itemBox a button {
+      opacity: 0;
+      float: right;
+      position: absolute;
+      top: 3px;
+      right: 0px;
+      bottom: 10px;
+      left: 170px;
+      border: 1px solid #E1E3DF;
+      width: 40px;
+      height: 25px;
+      padding: 1px;
+      border-radius: 3px;
+      background-color: white; }
+    .bodycontainer .itemBoxes .itemBox a:hover button .hamburger {
+      opacity: .95;
+      z-index: 2; }
+    .bodycontainer .itemBoxes .itemBox a:hover button {
+      opacity: .95;
+      z-index: 2; }
+    .bodycontainer .itemBoxes .itemBox a:hover button:hover {
+      opacity: 100;
+      z-index: 2; }
+    .bodycontainer .itemBoxes .itemBox a:hover button:hover .hamburger {
+      opacity: 100;
+      z-index: 100; }
+    .bodycontainer .itemBoxes .itemBox a:hover .triangle {
+      opacity: 100;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 8px 4px 0 4px;
+      border-color: #d4d4d4 transparent transparent transparent;
+      margin-top: 5px;
+      float: right;
+      padding-right: 2px; }
+    .bodycontainer .itemBoxes .itemBox a:hover .hamburger:hover {
+      opacity: 100; }
+    .bodycontainer .itemBoxes .itemBox a:hover .hamburger:hover {
+      opacity: 100; }
+    .bodycontainer .itemBoxes .itemBox a .heart {
+      opacity: 0;
+      float: right;
+      position: absolute;
+      top: 3px;
+      right: 0px;
+      bottom: 10px;
+      left: 140px;
+      border: 1px solid #E1E3DF;
+      width: 18px;
+      padding: 2px;
+      border-radius: 3px;
+      background-color: white; }
+    .bodycontainer .itemBoxes .itemBox a:hover .heart {
+      opacity: .9; }
+    .bodycontainer .itemBoxes .itemBox a:hover .heart:hover {
+      opacity: 100; }
+    .bodycontainer .itemBoxes .itemBox div #popup.hidden {
+      z-index: 0;
+      opacity: 0;
+      position: absolute;
+      bottom: 170px; }
+    .bodycontainer .itemBoxes .itemBox #popup.reveallist {
+      border: 2px solid #E1E3DF;
+      background-color: white;
+      margin-left: 80px;
+      overflow: visible;
+      width: 180px;
+      padding: 8px;
+      border-radius: 3px;
+      position: absolute;
+      bottom: 170px;
+      z-index: 2; }
+      .bodycontainer .itemBoxes .itemBox #popup.reveallist a {
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: left; }
+      .bodycontainer .itemBoxes .itemBox #popup.reveallist p {
+        margin-top: 2px;
+        margin-bottom: 4px; }
+  .bodycontainer input {
+    border: none;
+    padding-right: 5px;
+    text-align: left; }
+  .bodycontainer .itemtype {
+    padding-left: 5px;
+    text-align: left; }
+  .bodycontainer .lowPrice {
+    border: none;
+    padding-right: 5px;
+    width: 40px; }
+  .bodycontainer .highPrice {
+    border: none;
+    padding-right: 5px;
+    width: 40px; }
+  .bodycontainer .pricefield {
+    border: 1px solid #E1E3DF;
+    padding: 5px;
+    border-radius: 3px;
+    display: inline-block; }
+  .bodycontainer .priceButton {
+    background-color: white;
+    border: 1px solid #E1E3DF;
+    border-radius: 2px;
+    vertical-align: top;
+    font-size: 1.3em;
+    padding: 5px 0;
+    width: 25px; }
+  .bodycontainer .itemBox .text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 5px;
+    margin: 2px 0;
+    font-size: .9em;
+    color: #555563; }
+    .bodycontainer .itemBox .text a {
+      font-size: 1.2em;
+      text-decoration: none; }
+  .bodycontainer .colorblocks {
+    border: 1px solid #E1E3DF;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    border-radius: 2px;
+    padding: 0;
+    margin-left: .08px; }
+  .bodycontainer #pink {
+    background-color: pink;
+    margin-left: 2px; }
+  .bodycontainer #orange {
+    background-color: orange; }
+  .bodycontainer #yellow {
+    background-color: yellow; }
+  .bodycontainer #green {
+    background-color: green; }
+  .bodycontainer #blue {
+    background-color: blue; }
+  .bodycontainer #purple {
+    background-color: purple; }
+  .bodycontainer #black {
+    background-color: black; }
+  .bodycontainer #white {
+    background-color: white; }
+  .bodycontainer .itemBox .shopName {
+    display: inline-block;
+    font-size: 10px;
+    padding-left: 5px;
+    margin: 2px 0;
+    vertical-align: center; }
+    .bodycontainer .itemBox .shopName a {
+      font-size: 1.2em;
+      color: #C7B4AA; }
+  .bodycontainer .orderingoption {
+    border-radius: 0px;
+    color: #4AA8C4; }
+  .bodycontainer .itemBox .shopName:hover {
+    text-decoration: underline; }
+  .bodycontainer .itemBox .price {
+    display: inline-block;
+    float: right;
+    padding-right: 5px;
+    font-size: 12px;
+    text-align: right;
+    padding-left: 5px;
+    margin: 2px 0;
+    color: #78C094; }
+  .bodycontainer .relatedtoP {
+    font-size: 1.2em; }
+  .bodycontainer .relatedto {
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 0px;
+    padding-right: 100px;
+    line-height: 28px;
+    margin-top: 2px; }
+    .bodycontainer .relatedto ul {
+      padding-left: 0px; }
+    .bodycontainer .relatedto li {
+      color: #4AA8C4;
+      font-size: 1.2em; }
+  .bodycontainer #numberbtn {
+    width: 40px;
+    padding: 8px 5px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid gray;
+    margin: 0px 0px 0px 0px;
+    font-weight: bold; }
+  .bodycontainer #numberbtn2 {
+    width: 40px;
+    padding: 8px 5px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid gray;
+    border-left: none;
+    margin: 0px 0px 0px 0px; }
+  .bodycontainer #numberbtn3 {
+    width: 40px;
+    padding: 8px 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    background-color: #4AA8C4;
+    border: 1px solid gray;
+    border-left: none;
+    margin: 0px 0px 0px 0px; }

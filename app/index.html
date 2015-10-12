@@ -1,15 +1,267 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SAMPLE PROJECT</title>
-  <link rel="stylesheet" href="css/vendor.css">
+  <title>Etsy Baseball</title>
+  <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
 
-  <h1>Hello World</h1>
+  <div class="topcontainer">
+     
+    
+      
+      <div class="topbar">
 
-  <script src="js/vendor.js"></script>
+          <span class="Etsy">Etsy</span>
+          
+          <form class="searchBarWrapper">
+            <input class="searchInput" type="text" placeholder="Search for items">
+            </input>
+            <button class="searchButton">Search</button>
+          </form>
+
+
+          
+          <nav class="topBarNav">
+          <!-- add a link -->
+            <span class="sellOn">Sell on Etsy</span>
+            <div class="topRightIcons">
+              <div class="iconblocks"> <span> <img src="http://i.imgur.com/i2wuXmi.png"><br>Home</span></div>
+              <div class="iconblocks"> <span> <img src="http://i.imgur.com/EhrpzUf.png"><br>Favorites</span></div>
+              <div class="iconblocks"><span> <img src="http://i.imgur.com/16ExQuy.png"><br>You</span></div>
+              <div class="iconblocks"> <span> <img src="http://i.imgur.com/KQLhHRk.png"><br>Cart</span></div>
+            </div>
+          </nav>
+
+          
+      </div>
+
+<hr>
+
+     
+      <nav class="navBar">
+
+        <ul>
+          
+          <li>Clothing & Accessories</li>
+          <li>Jewelry</li>
+          <li>Crafts Supplies & Tools</li>
+          <li>Weddings</li>
+          <li>Entertainment</li>
+          <li>Home & Living</li>
+          <li>Kids & Baby</li>
+          <li>Vintage</li>
+
+        </ul>
+
+      </nav>
+
+  </div>
+
+  <div class = "graycontainer">
+  
+  <div class ="bodycontainer">
+
+  <div class="sidebar">
+        <h2>Show results for</h2>
+        <div class="sideList">
+          <span>All Categories</span>
+          <ul class="showResults">  
+            <li class="mainList">Clothing</li>
+            <li class="mainList">Accessories</li>
+            <li class="mainList">Art & Collectibles</li>
+            <li class="mainList">Home & Living</li>
+            <li class="mainList">Craft Supplies & Tools</li>
+            <li class="mainList">Jewelry</li>
+            <li class="mainList">Paper & Party Supplies</li>
+            <li class="mainList">Bath & Beauty</li>
+          </ul>
+        </div>
+
+      
+
+        <h2>Refine your search</h2>
+        <div class="sideList">
+        <span>Item type</span><br>
+          <form>
+          <input type="radio" name="itemtype" value="All items" class="itemtype">          All items<br>
+          <input type="radio" name="itemtype" value="Handmade" class="itemtype">   Handmade<br>
+          <input type="radio" name="itemtype" value="Vintage" class="itemtype">   Vintage
+           </input>
+           </form>
+
+
+      
+      <hr>
+
+        <span>Price</span><br>
+      
+         
+         <form>
+            <div class="pricefield">$
+            <input class="lowPrice" type= "text"placeholder=" Low">
+            </div>
+            </input>
+            <span>to</span>
+            <div class="pricefield">$
+            <input class="highPrice" type= "text" placeholder=" High">
+            </input>
+            </div>
+            <button class="priceButton"> > </button>
+          </form>
+
+<br>
+
+        <span>Filter by Color</span> <br>
+            <div>
+              <div id="pink" class="colorblocks" ><a href="#"></a></div>
+              <div id="orange" class="colorblocks" ><a href="#"></a></div>
+              <div id="yellow" class="colorblocks" ><a href="#"></a></div>
+              <div id="green" class="colorblocks" ><a href="#"></a></div>
+              <div id="blue" class="colorblocks" ><a href="#"></a></div>
+              <div id="purple" class="colorblocks" ><a href="#"></a></div>
+              <div id="black" class="colorblocks" ><a href="#"></a></div>
+              <div id="whites" class="colorblocks" ><a href="#"></a></div>
+
+            </div>
+
+        <hr>
+
+        <span>Ordering Options</span>
+          <form>
+          <input type="radio" name="orderingoption" value="All items" class="orderingoption">          In Your Favorites<br>
+          <input type="radio" name="orderingoption" value="Handmade" class="orderingoption">   Accepts Etsy Gift Cards<br>
+          <input type="radio" name="orderingoption" value="Vintage" class="orderingoption">   Customizable
+           </input>
+           </form>
+
+        <hr>
+
+        <span>Shop Location</span>
+          <form>
+          <input type="radio" name="orderingoption" value="All items" class="orderingoption">          Anywhere<br>
+          <input type="radio" name="orderingoption" value="Handmade" class="orderingoption">   United States<br>
+           </input>
+           </form>
+           <a href="#" id="chooseloc">Choose a custom location<a>
+
+
+        <hr>
+
+
+
+        <h2>Ship To </h2>
+
+        <div class="locationselector">
+          <select>
+            <option>United States</option>
+            <option>Canada</option>
+          </select>
+          </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- main panel -->
+
+
+
+    <div class="mainpanel">
+        <h2>All categories <span>> "baseball" (162,627 Results)</span></h2>
+
+          <div class="itemBoxes">
+             <script type="text/template" id="itemTemplate">
+                 <div class="itemBox">
+                  <div class="imagecard">
+                  <a href= <%= url %> >
+                  <img class="itemImages" src="<%= Images[0].url_170x135 %>">
+                    <button type="button" id="hambutton"> <img class="hamburger" src="http://i.imgur.com/vzMlwuz.png"> <div class="triangle"> </div> </button>
+                    <img class="heart" src="http://i.imgur.com/rnX9fvX.png">
+                    <div class="hidden" id="popup">
+                      <p class="yourlist">Your lists</p>
+                      <input type="text" placeholder="New list">
+                      </input>
+                    </a>
+                  </div>                
+                  <p class="text">
+                    <a href= <%= url %> >
+                    <%= title %>
+                  </p>
+                  <p class="shopName">
+                    <a href= <%= Shop.url %>
+                    <span><%= Shop.shop_name %></span>
+                    </a>
+                  </p>
+                  <p class="price">
+                    $<%= price %> USD
+                  </p>
+                </div>
+            </script>
+          </div>
+          <div>
+          <p class="relatedtoP">Related to baseball</p>
+          <ul class="relatedto">
+            <li>baseball decor</li>
+            <li>baseball mom</li>
+            <li>baseball crafts</li>
+            <li>baseball gloves</li>
+          </ul>
+
+           <ul class="relatedto">
+            <li>baseball decor</li>
+            <li>baseball mom</li>
+            <li>baseball crafts</li>
+            <li>baseball gloves</li>
+          </ul>
+
+          <p class="relatedtoP">Looking for shops?</p>
+
+  
+          <button id="numberbtn"><</button><button id="numberbtn3">1</button><button id="numberbtn2">2</button><button id="numberbtn2">3</button><button id="numberbtn2">4</button><button id="numberbtn2">5</button><button id="numberbtn2">6</button><button id="numberbtn2">7</button><button id="numberbtn2">8</button><button id="numberbtn2">...</button><button id="numberbtn2">250</button><button id="numberbtn2">></button>
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+           
+        
+        
+          </div>
+
+
+    </div>
+  </div>
+
+
+   
+
+
+   
+
+  </div>
+
+
+
+
+  
+  <!-- scripts -->
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
+
+  <script src="js/etsy.js"></script>
   <script src="js/main.js"></script>
+
+
 </body>
 </html>

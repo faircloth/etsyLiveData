@@ -1,0 +1,597 @@
+// stlye variables
+$etsyOrange: #EC6333;
+$etsyBlue: #4AA8C4;
+$etsyGray: #F5F5F1;
+$etsyBorder: #E1E3DF;
+$pageWidth: 950px;
+$sidebarWidth: 220px;
+$mainPanelWidth: 710px;
+
+
+* {
+  font-size: 12px;
+  font-family: 'Noto Sans', sans-serif;
+  color: #555563;
+}
+
+
+
+h2 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+// top bar
+
+.topbar {
+  width: $pageWidth;
+  margin: 0 auto;
+
+}
+
+.Etsy {
+  color: $etsyOrange;
+  font-size: 40px;
+}
+
+.searchBarWrapper {
+  display: inline-block;
+  margin-left: 20px;
+  border: 1px solid $etsyBlue;
+  border-radius: 3px;
+
+  .searchInput {
+    border: none;
+    padding-left: 5px;
+    padding-right: 35px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+  .searchButton {
+    padding: 10px 10px;
+    background-color: $etsyBlue;
+    border: 1px solid $etsyBlue;
+    border-radius: 2px;
+    color: white;
+  }
+
+}
+
+.topBarNav {
+  display: inline-block;
+
+    .sellOn{
+      color: $etsyBlue;
+      font-size: 1.2em;
+      margin-left: 100px;
+      padding-bottom: 30px;
+    }
+    .topRightIcons {
+      display: inline-block;
+      width: 380px;
+      margin: 5px 10px;
+      padding-left: 0px;
+    }
+
+    div .iconblocks {
+      display: block;
+      border-right: 1px solid $etsyBorder;
+      width: 23%;
+      height: 50px;
+      display: inline-block;
+      padding-top: 10px;
+      padding-bottom: 0px;
+      vertical-align: center;
+      text-align: center;
+      line-height: 5px;
+      font-size: 1.2em;
+      opacity: .6;
+
+        :hover {
+          opacity: 1;
+        }
+    }
+
+    img {
+      display: block;
+      width: 25px;
+      height: 30px;
+      vertical-align: top;
+      margin: 0 auto;
+      opacity: .6;
+      :hover {
+          opacity: 1;
+        }
+
+    }
+}
+
+
+
+// Second bar: nav
+
+
+hr {
+    border-top: .03px solid #E1E3DF;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.navBar {
+  margin: 10px 0px 0px 0px;
+  ul {
+    margin-left: 0;
+    text-align: center;
+    padding: 1px 0px;
+  }
+  li {
+    display: inline-block;
+    padding: 0px 23px 5px 0px;
+    font-size: 1.1em;
+    }
+  }
+
+
+
+
+// bodycontainer
+
+.graycontainer {
+  background-color: $etsyGray;
+  border-top: 2px solid $etsyGray;
+}
+
+.bodycontainer  {
+  width: $pageWidth;
+  margin: 0 auto;
+  padding: 0;
+  background-color: $etsyGray;
+
+  .sidebar {
+    display: inline-block;
+    width: $sidebarWidth;
+    vertical-align: top;
+    margin-left: 5px;
+
+
+    .sideList {
+      border-radius: 3px;
+      background-color: white;
+      border: 1px solid #CBCCC9;
+      padding: 10px;
+      line-height: 1.9em;
+
+       span {
+        padding-left: 0px;
+        font-weight: bold;
+        font-size: 1.1em;
+        padding-bottom: 2px;
+      }
+
+      ul {
+      list-style-type: none;
+      padding-left: 10px;
+      font-size: 1em;
+ 
+
+        .mainList {
+          color: $etsyBlue;
+        }
+      }
+
+        .radiobutton {
+          radius: 3px;
+          margin-left: 5px;
+          margin-top: 10px;
+
+            .radiobutton :hover {
+            background-color: black;
+            }
+        }
+
+      a {
+        color: $etsyBlue;
+        text-decoration: none;
+        padding-left: 8px;
+        }
+
+    }
+
+    .itemtype input {
+      background-color: $etsyBlue;
+      padding: 15px;
+      font-weight: 500;
+    }
+
+    #chooseloc {
+      padding-left: 0px;
+    }
+
+    select {
+      display: block;
+      width: 180px;
+      height: 40px;
+      border: 1px solid $etsyBlue;
+      margin-top: 5px;
+      padding: 20px 5px;
+      font-size: 1.2em;
+    }
+
+  }
+
+  .mainpanel h2 {
+      color: $etsyBlue;
+      padding-left: 5px;
+
+        span {
+          font-size: 1.05em;
+        }
+    }
+
+  .mainpanel {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5px;
+  }
+
+   
+
+    .itemBoxes {
+      display: inline-block;
+      padding: 0px;
+      width: $mainPanelWidth;
+    }
+
+
+    
+
+      .itemBoxes .itemBox {
+        display: inline-block;
+        margin-top: 0px;
+        margin: 0px 5px 15px 4px;
+        width: 31%;
+        
+        vertical-align: top;
+        border-radius: 3px;
+        background-color: white;
+        border: 1px solid #CBCCC9;
+            .imagecard {
+              position: relative;
+            } 
+
+            .itemImages{
+                border-radius: 2px;
+                width: 100%;
+                padding: 0px;
+                overflow: hidden;
+                z-index: 0;
+                border-bottom: 1px solid $etsyBorder;
+                box-sizing: border-box;
+              }
+
+              // a {
+              //   z-index: -1;
+              // }
+
+              a button .hamburger{
+                opacity: 0;
+                float: left;
+                width: 15px;
+                vertical-align: center;
+               }
+
+               a button {
+                opacity: 0;
+                float: right;
+                position: absolute;
+                top: 3px;
+                right: 0px;
+                bottom: 10px;
+                left: 170px;
+                border: 1px solid $etsyBorder;
+                width: 40px;
+                height: 25px;
+                padding: 1px;
+                border-radius: 3px;
+                background-color: white;
+               }
+
+              a:hover button .hamburger {
+                opacity: .95;
+                z-index: 2;
+        
+              }
+            
+
+              a:hover button {
+                opacity: .95;
+                z-index: 2;
+              }
+
+              a:hover button:hover {
+                opacity: 100;
+                z-index: 2;
+                
+              }
+
+               a:hover button:link {
+                
+              }
+
+              a:hover button:hover .hamburger {
+                opacity: 100;
+                z-index: 100;
+              }
+
+               a:hover .triangle {
+                opacity: 100;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 8px 4px 0 4px;
+                border-color: #d4d4d4 transparent transparent transparent;
+                margin-top: 5px;
+                float: right;
+                padding-right: 2px;
+              }
+
+                a:hover .hamburger:hover {
+                    opacity: 100;
+                  }
+
+
+                a:hover .hamburger:hover {
+                    opacity: 100;
+
+                  }
+               
+               a .heart{
+                opacity: 0;
+                float: right;
+                position: absolute;
+                top: 3px;
+                right: 0px;
+                bottom: 10px;
+                left: 140px;
+                border: 1px solid $etsyBorder;
+                width: 18px;
+                padding: 2px;
+                border-radius: 3px;
+                background-color: white;
+               }
+               a:hover .heart {
+                opacity: .9;
+              }
+
+                a:hover .heart:hover {
+                    opacity: 100;
+                  }
+
+                 
+                  div #popup.hidden {
+                  z-index: 0;
+                  opacity: 0;
+                  position: absolute;
+                  bottom: 170px;
+                  }
+
+                  #popup.reveallist {
+                  border: 2px solid $etsyBorder;
+                  background-color: white;
+                  margin-left: 80px;
+                  overflow: visible;
+                  width: 180px;
+                  padding: 8px;
+                  border-radius: 3px;
+                  position: absolute;
+                  bottom: 170px;
+                  z-index: 2;
+
+                   a {
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        text-align: left;
+                    }
+
+                    p {
+                      margin-top: 2px;
+                      margin-bottom: 4px;
+                    }
+
+                    
+                    
+                  }
+            
+      }
+
+     input {
+      border: none;
+      padding-right: 5px;
+      text-align: left;
+    }
+
+        .itemtype {
+          padding-left: 5px;
+          text-align: left;
+
+        }
+     
+       .lowPrice {
+        border: none;
+        padding-right: 5px;
+        width: 40px;
+      }
+
+       .highPrice {
+        border: none;
+        padding-right: 5px;
+        width: 40px;
+      }
+     
+
+     .pricefield {
+      border: 1px solid $etsyBorder;
+      padding: 5px;
+      border-radius: 3px;
+      display: inline-block;
+     }
+
+      .priceButton {
+        background-color: white;
+        border: 1px solid $etsyBorder;
+        border-radius: 2px;
+        vertical-align: top;
+        font-size: 1.3em;
+        padding: 5px 0;
+        width: 25px;
+      }
+
+      .itemBox .text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0 5px;
+        margin: 2px 0;
+        font-size: .9em;
+        color: #555563;
+
+
+          a {
+            font-size: 1.2em;
+            text-decoration: none;
+
+          }
+      }
+
+     
+
+      .colorblocks {
+        border: 1px solid $etsyBorder;
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        border-radius: 2px;
+        padding: 0;
+        margin-left: .08px;
+       }
+
+      #pink {
+        background-color: pink; 
+        margin-left: 2px;
+        }  
+      #orange {background-color: orange;}
+      #yellow {background-color: yellow;}
+      #green {background-color: green;}
+      #blue {background-color: blue;}
+      #purple {background-color: purple;}
+      #black {background-color: black;}
+      #white {background-color: white;}
+      
+
+      .itemBox .shopName {
+        display: inline-block;
+        font-size: 10px;
+        padding-left: 5px;
+        margin: 2px 0;
+        vertical-align: center;
+        a {
+          font-size: 1.2em;
+           color: #C7B4AA;
+        }
+      }
+
+     .orderingoption {
+      border-radius: 0px;
+      color: $etsyBlue;
+    }
+      .itemBox .shopName:hover {
+        text-decoration: underline;
+      }
+
+
+      .itemBox .price {
+        display: inline-block;
+        float: right;
+        padding-right: 5px;
+        font-size: 12px;
+        text-align: right;
+        padding-left: 5px;
+        margin: 2px 0;
+        color: #78C094;
+      }
+
+      .relatedtoP {
+        font-size: 1.2em;
+      }
+
+      .relatedto {
+        display: inline-block;
+        list-style-type: none;
+        padding-left: 0px;
+        padding-right: 100px;
+        line-height: 28px;
+        margin-top: 2px;
+
+          ul {
+            padding-left: 0px;
+          }
+
+          li {
+            color: $etsyBlue;
+            font-size: 1.2em;
+          }
+      }
+
+          #numberbtn {
+          width: 40px;
+          padding: 8px 5px;
+          font-size: 14px;
+          background-color: white;
+          border: 1px solid gray;
+          margin: 0px 0px 0px 0px;
+          font-weight: bold;
+          }
+
+          #numberbtn2 {
+          width: 40px;
+          padding: 8px 5px;
+          font-weight: bold;
+          font-size: 14px;
+          background-color: white;
+          border: 1px solid gray;
+          border-left: none;
+          margin: 0px 0px 0px 0px;
+          }
+
+          #numberbtn3 {
+          width: 40px;
+          padding: 8px 5px;
+          font-weight: bold;
+          font-size: 14px;
+          color: white;
+          background-color: $etsyBlue;
+          border: 1px solid gray;
+          border-left: none;
+          margin: 0px 0px 0px 0px;
+          }
+
+
+
+
+   
+
+      
+}  
+
+
+  
+  
+
+
+
+
+
+
+
